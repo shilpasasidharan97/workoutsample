@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- up and down -->
+        <p id="para1" onmouseup="functionup()" onmousedown="functiondown()">Lorem ipsum dolor sit amet, consectetur ad
+        ipisicing elit. Voluptates atque suscipit quaerat rerum minus cupiditate voluptatum dolore. Dolori
+        bus, quidem perspiciatis. Quo ipsam co
+        rporis quia magnam aperiam doloremque aliquid dolorem ex?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, placeat
+         recusandae iure molestiae beatae ex quaerat numquam consequuntur tenetur dolores 
+        saepe, iste excepturi voluptatibus eius. Officiis nihil sit assumenda veniam.</p>
+
+
+    <!-- with content change -->
+        <p id="demo" onmouseup="mouseup()" onmousedown="mousedown()">Click here</p>
+    
+<script>
+
+//mouseup and down
+    function functionup(){
+        document.getElementById("para1").style.color = "Red";
+        }
+
+        function functiondown(){
+        document.getElementById("para1").style.color = "green";
+        }
+
+//mouseup and down with content change    
+    function mouseup() {
+    document.getElementById("demo").innerHTML = "The mouse button is held down.";
+    }
+
+    function mousedown() {
+    document.getElementById("demo").innerHTML = "You released the mouse button.";
+    }
+
+</script>
+</body>
+</html>
