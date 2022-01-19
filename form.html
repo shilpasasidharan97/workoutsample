@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/new.html" id="form1" method="" name="forms"  onreset="sub()" onsubmit="sub()"><br><br>
+        <input type="text" placeholder="Enter your name" name="fullname" id="name" onfocus="funfocus()"><br><br>
+        <input type="reset" value="Reset"><br><br>
+        <input type="submit" value="submit">
+
+        <!-- <input type="button"  value="reset"> -->
+    </form>
+
+    
+
+    <script>
+    
+    //length of input field
+        var a=document.getElementById("form1").length
+        console.log(a)
+
+    //reset
+        function sub(){
+        alert("reset all field")
+        }
+
+        // re=document.getElementById("form1").reset()
+
+    //submit
+        function sub(){
+            alert("submitted")
+        }
+        document.getElementById("form1").submit()
+        
+    
+    
+    </script>
+</body>
+</html>

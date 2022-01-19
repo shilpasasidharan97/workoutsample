@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/new.html" id="form1" method="" name="forms">
+        <input type="text" value="name1" id="fullname" placeholder="enter your name" onfocus="funfocus()">
+        <input type="button" value="on focus"  onclick="myfocus()">
+        <input type="button" value="on blur" onclick="myblur()">
+        <input type="button" value="select" onclick="myselect()">
+        <input type="text" id="txt" onchange="myfunction()">
+    </form>
+
+
+    <script>
+    // focus
+        // function funfocus(){
+        //     alert("focused")
+        // }
+
+        function myfocus(){
+            document.getElementById("fullname").focus()
+            document.getElementById("fullname").style.backgroundColor="blue"
+        }
+    // blur
+        function myblur(){
+            document.getElementById("fullname").blur()
+            document.getElementById("fullname").style.backgroundColor=""
+        }
+
+    // select
+        function myselect(){
+            document.getElementById("fullname").select()
+        }
+    //onchange
+        function myfunction(){
+            // alert("content changed")
+            var a=document.getElementById("txt")
+            a.value=a.value.toUpperCase()
+        
+    }
+
+        
+    </script>
+
+
+
+
+</body>
+</html>
